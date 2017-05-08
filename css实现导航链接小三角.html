@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>前端案例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <base target="_blank, _self, _parent, _top" href="">
+    <!-- 引入 Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+	.nav-a{display: block;position: relative;width: 100px;height: 50px;line-height: 50px;background-color: #000;color: #FFF;text-align: center;}
+	.nav-a:hover{color: #FFF;text-decoration: none;}
+	.nav-a:after{    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+    top: 20px;
+    right: 10px;
+    transform: rotate(0deg);
+    transition: all 300ms ease 0s;}
+    	.nav-a:hover:after{    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+    top: 20px;
+    right: 10px;
+    transform: rotate(90deg);
+    transition: all 300ms ease 0s;}
+	</style>
+</head>
+
+<body>
+	<h1>css实现导航链接小三角</h1>
+	<a class="nav-a" href="#">导航</a>
+
+
+
+
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+</body>
+
+</html>
