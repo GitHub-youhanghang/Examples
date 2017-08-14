@@ -3,13 +3,13 @@
         var bodyCon = $('body').html();
         $('body').append('<div class="showCodeBox bottom"><textarea id="styleSrc"></textarea><textarea id="bodySrc"></textarea></div>');
 
-        $('body').append('<div class="srcBtns"><button id="srcBtn"  class="btn btn-primary">关闭源代码</button><button id="codeBoxPosition"  class="btn btn-primary bottom">源代码位置-右</button></div>');
+        $('body').append('<div class="srcBtns"><button id="srcBtn"  class="btn btn-primary">打开源代码</button><button id="codeBoxPosition"  class="btn btn-primary bottom">源代码位置-右</button></div>');
 
 
         $('#bodySrc').val(bodyCon);
         $('#styleSrc').val(styleCon);
 
-        var srcIsOpen=true;
+        var srcIsOpen=false;
         $('#srcBtn').on('click',function(){
             if (srcIsOpen) {
                 $(this).text('打开源代码');
